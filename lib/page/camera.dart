@@ -9,7 +9,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:camera/camera.dart';
 import 'package:image/image.dart' as img;
 
-class ktpPage extends StatefulWidget {
+class cameraPage extends StatefulWidget {
   final String NIM, Nama, TTL, Jurusan;
   // GolDarah,
   // Alamat,
@@ -21,7 +21,7 @@ class ktpPage extends StatefulWidget {
   // StatusPerkawinan,
   // Pekerjaan,
   // Kewarganegaraan;
-  const ktpPage(
+  const cameraPage(
       {Key? key,
       required this.NIM,
       required this.Nama,
@@ -39,13 +39,13 @@ class ktpPage extends StatefulWidget {
       // required this.Kewarganegaraan
       })
       : super(key: key);
-  // const ktpPage({Key? key}) : super(key: key);
+  // const cameraPage({Key? key}) : super(key: key);
 
   @override
-  _ktpPageState createState() => _ktpPageState();
+  _cameraPageState createState() => _cameraPageState();
 }
 
-class _ktpPageState extends State<ktpPage> {
+class _cameraPageState extends State<cameraPage> {
   CameraController? _controller;
   Future<void>? _initializeControllerFuture;
 
